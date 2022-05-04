@@ -1,0 +1,1485 @@
+@import "layout/grid";
+@import "utilities/variables";
+
+/* estilo */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.containerGrid {
+    display: $containergrid;
+    grid-template-columns: $templatecolumnsindex;
+    grid-template-rows: $templaterowsindex;
+    max-width: $maxwidth;
+    grid-column-gap: $columngap;
+    grid-row-gap: $row-gap;
+    background-color: $bgcolor-dark;
+    margin: $marginXS;
+}
+
+.logoStyle {
+    margin: $marginM;
+}
+
+.logo1 {
+    grid-area: 1 / 1 / 2 / 4;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-stack;
+    font-weight: bold;
+    font-style: normal;
+    font-size: $font-size-XL;
+    color: $font-colorPrimary;
+    background-color: $bgcolor-dark;
+    justify-items: stretch;
+    margin-left: $marginXS;
+    margin-right: $marginXS;
+}
+
+
+/*Navegador*/
+
+#navBar2 {
+    grid-area: 1 / 2 / 2 / 13;
+    width: $maxwidth;
+    background-color: $bgcolor-dark;
+    align-self: stretch;
+    margin-left: $marginXS;
+    margin-top: $marginM;
+    margin-right: $marginXS;
+    border: 0;
+    padding-top: $paddingS;
+}
+
+#menu {
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    background-color: $bgcolor-dark;
+}
+
+#menuItem {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    background-color: $bgcolor-dark;
+}
+
+#menutxt {
+    font-size: $font-size-S;
+    text-align: center;
+    display: block;
+    color: $font-colorSecond;
+    background-color: $bgcolor-dark;
+    padding: $paddingS;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-stack;
+    flex-wrap: wrap;
+}
+
+#sub__menu {
+    padding-left: 0;
+}
+
+#menutxt:hover {
+    background-color: $bgcolor-secondary;
+}
+
+#menu #sub__menu {
+    width: $maxwidth;
+    position: absolute;
+    display: none;
+    z-index: 10;
+}
+
+#menu #sub__menu #menuItem {
+    width: $maxwidth
+}
+
+#menu #menuItem:hover #sub__menu {
+    display: block;
+}
+
+#menu #menuItem:hover #sub__menu #menutxt:hover {
+    background-color: $bgcolor-secondary;
+}
+
+
+/*Carousel Promociones*/
+
+.carouselPromo3 {
+    grid-area: 2 / 1 / 3 / 13;
+    width: $widthM;
+    font-style: italic;
+    font-family: $font-stack;
+    font-size: $font-size-M;
+    margin: $marginS;
+    justify-self: center;
+    align-self: center;
+}
+
+
+/*Card about app*/
+
+.cardImgApp4 {
+    grid-area: 3 / 1 / 4 / 13;
+    border-color: $bordercolor-primary;
+    width: $widthM;
+    margin: $marginM;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.col-md-8 {
+    background-color: $bgcolor-dark;
+    font-family: $font-stack;
+    font-style: italic;
+}
+
+#cardIndexApp {
+    color: $font-colorPrimary;
+    font-size: $font-size-M;
+    border-color: $bordercolor-primary;
+}
+
+
+/*Card about IoT*/
+
+.cardImgIoT5 {
+    grid-area: 4 / 1 / 5 / 13;
+    margin: $marginM;
+    width: $widthM;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+#cardIndexIot {
+    background-color: $bgcolor-dark;
+    color: $bordercolor-primary;
+    font-family: $font-stack;
+    font-size: $font-size-M;
+    border-color: $bordercolor-primary;
+}
+
+
+/*Promociones*/
+
+.promotions6 {
+    grid-area: 5 / 1 / 6 / 7;
+    color: $font-colorPrimary;
+    font-family: $font-stack;
+    font-size: $font-size-M;
+    font-style: oblique;
+    text-align: center;
+}
+
+
+/*Combos*/
+
+.comboUser7 {
+    grid-area: 5 / 7 / 6 / 13;
+    color: $font-colorPrimary;
+    font-family: $font-stack;
+    font-size: $font-size-M;
+    font-style: oblique;
+    text-align: center;
+}
+
+.linkPromos {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 3;
+    color: $font-colorPrimary;
+}
+
+.linkPromos:hover {
+    background: $bgcolor-dark;
+    color: $font-colorThird;
+}
+
+.linkProd {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 3;
+    color: $font-colorSecond;
+}
+
+.linkProd:hover {
+    background: $bgcolor-dark;
+    color: $font-colorThird;
+}
+
+
+/*Carousel sobre productos y aplicacion*/
+
+.carouselProd-App8 {
+    grid-area: 6 / 1 / 7 / 13;
+    width: $widthM;
+    height: $heigt;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/*Footer*/
+
+.footer9 {
+    grid-area: 7 / 1 / 8 / 13;
+    width: $maxwidth;
+}
+
+.flex-containerFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    font-family: $font-stack;
+    color: $font-colorPrimary;
+    background-color: $bgcolor-dark;
+    background-image: linear-gradient(#000000, #454444);
+}
+
+.flexItem-footer1:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: $basis;
+    align-self: center;
+    order: 0;
+}
+
+.footer-menu #liMenuFooter {
+    text-decoration: none;
+    list-style: none;
+    font-family: $font-stack;
+    font-size: $font-size-S;
+    color: $font-colorPrimary;
+    background-color: $bordercolor-primary;
+}
+
+#liMenuFooter #lifooter {
+    list-style-type: none;
+    color: $font-colorPrimary;
+    text-decoration: none;
+    text-align: start;
+    font-size: $font-size-S;
+    font-family: $font-stack;
+}
+
+.flexItem-footer2:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: $basis;
+    align-self: stretch;
+    text-align: center;
+    order: 0;
+}
+
+.flexItem-footer3:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: $basis;
+    align-self: stretch;
+    text-align: center;
+    order: 0;
+}
+
+.icon-instagram {
+    font-size: $font-size-XL;
+    color: $font-colorPrimary;
+    text-align: start;
+    text-decoration: none;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-instagram:hover {
+    transition-duration: $transitionLogoRS;
+    font-size: $font-size-XL;
+    background-color: $font-colorFourth;
+    color: $font-colorPrimary;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-facebook {
+    font-size: $font-size-XL;
+    color: $font-colorPrimary;
+    text-align: start;
+    text-decoration: none;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-facebook:hover {
+    transition-duration: $transitionLogoRS;
+    font-size: $font-size-XL;
+    background-color: $bgcolor-dark;
+    color: $font-colorFourth;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-twitter {
+    font-size: $font-size-XL;
+    color: $font-colorPrimary;
+    text-align: start;
+    text-decoration: none;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-twitter:hover {
+    transition-duration: $transitionLogoRS;
+    font-size: $font-size-XL;
+    background-color: $bgcolor-dark;
+    color: $font-colorFourth;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+
+/* Style de contacto*/
+
+.containerGrid-contact {
+    display: $containergrid;
+    grid-template-columns: $templatecolumnscontact;
+    grid-template-rows: $templaterowscontact;
+    grid-column-gap: $columngap;
+    grid-row-gap: $row-gap;
+    width: $maxwidth;
+    background-color: $bgcolor-dark;
+}
+
+
+/*Logo contacto*/
+
+.logo1-contact {
+    grid-area: 1 / 1 / 2 / 4;
+    height: 3.125rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-stack;
+    font-weight: bold;
+    font-style: normal;
+    font-size: $font-size-XL;
+    color: $font-colorPrimary;
+    background-color: $bgcolor-dark;
+    justify-items: stretch;
+    margin-left: $marginXS;
+}
+
+
+/*Barra navegacion contacto*/
+
+#navBar2-contact {
+    grid-area: 1 / 2 / 2 / 13;
+    height: 3.125rem;
+    background-color: $bgcolor-dark;
+    color: $font-colorPrimary;
+    align-self: stretch;
+    margin-left: $marginXS;
+    margin-top: $marginM;
+    margin-right: $marginXS;
+    border: 0;
+}
+
+
+/*Formulario de contacto*/
+
+#Form1-contact {
+    grid-area: 2 / 1 / 5 / 13;
+    width: $widthM;
+    height: 20rem;
+    background-color: $bgcolor-dark;
+    color: $font-colorSecond;
+    font-style: italic;
+    font-family: $font-stack;
+    font-size: $font-size-M;
+    margin: 2.5rem;
+    border-radius: 150rem;
+    -webkit-border-radius: 150rem;
+    -moz-border-radius: 150rem;
+    -ms-border-radius: 150rem;
+    -o-border-radius: 150rem;
+}
+
+
+/* Footer contacto */
+
+
+/* Footer */
+
+a:link a {
+    color: $font-colorPrimary;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.footer32-contact {
+    grid-area: 5 / 1 / 6 / 13;
+}
+
+
+/* Estilo de page Soporte */
+
+
+/*Grid soporte*/
+
+.containerGrid-soporte {
+    display: grid;
+    grid-template-columns: $templatecolumnsindex;
+    grid-template-rows: $templaterowssoporte;
+    grid-column-gap: $columngap;
+    grid-row-gap: $row-gap;
+    background-color: $bgcolor-dark;
+}
+
+
+/* Logo */
+
+.gridContainer-logo {
+    grid-area: 1 / 1 / 2 / 5;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-stack;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: $font-size-XL;
+    color: #ffffff;
+    background-color: #000000;
+    justify-items: stretch;
+    margin: 0.125rem;
+}
+
+
+/* Barra navegador Soporte */
+
+#gridContainer-navBar {
+    grid-area: 1 / 2 / 2 / 13;
+    width: $width;
+    background-color: $bgcolor-dark;
+    align-self: stretch;
+    margin-left: $marginXS;
+    margin-top: $marginM;
+    margin-right: $marginXS;
+    border: 0;
+}
+
+
+/* Fila manual usuario, instalacion y "about FUTURE" */
+
+
+/*Botones fila 3 y 4*/
+
+.btnManuales {
+    background-color: $bgcolor-secondary;
+    border: none;
+    color: $font-colorPrimary;
+    padding: 1rem 2rem;
+    text-align: start;
+    margin: $marginS, $marginM;
+    opacity: 0.6;
+    transition: $transitionLogoRS;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 22.5rem;
+    height: 17rem;
+    color: $font-colorPrimary;
+    font-family: $font-stack;
+    font-size: $font-size-M;
+    font-weight: lighter;
+    font-style: italic;
+    -webkit-transition: $transitionLogoRS;
+    -moz-transition: $transitionLogoRS;
+    -ms-transition: $transitionLogoRS;
+    -o-transition: $transitionLogoRS;
+}
+
+.stylebtn {
+    height: 15rem;
+    width: 20rem;
+}
+
+
+/*Fin botones*/
+
+.gridContainer-F3 {
+    grid-area: 2 / 1 / 4 / 13;
+}
+
+.flex-container-F3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 2rem;
+}
+
+.FI-manualUser:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 22.5rem;
+    height: 17.1875rem;
+    align-self: stretch;
+    order: 0;
+    background-color: $bgcolor-third;
+    color: $font-colorSecond;
+}
+
+.FI-manualUser:hover {
+    background-color: $bgcolor-dark;
+}
+
+.btn-1:hover {
+    position: absolute;
+    background-color: $bgcolor-dark;
+    font-size: 25px;
+    opacity: 1;
+    border: solid;
+    border-color: $bordercolor-primary;
+    border-width: auto;
+    border-radius: 3.75rem;
+    -webkit-border-radius: 3.75rem;
+    -moz-border-radius: 3.75rem;
+    -ms-border-radius: 3.75rem;
+    -o-border-radius: 3.75rem;
+}
+
+.FI-manualInstall:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 22.5rem;
+    height: 17.1875rem;
+    align-self: stretch;
+    order: 0;
+    background-color: $bgcolor-secondary;
+    color: $font-colorSecond;
+}
+
+.FI-manualInstall:hover {
+    background-color: $bgcolor-dark;
+}
+
+.btn-2:hover {
+    position: absolute;
+    background-color: $bgcolor-dark;
+    font-size: 25px;
+    opacity: 1;
+    border: solid;
+    border-color: $bordercolor-primary;
+    border-width: auto;
+    border-radius: 3.75rem;
+    -webkit-border-radius: 3.75rem;
+    -moz-border-radius: 3.75rem;
+    -ms-border-radius: 3.75rem;
+    -o-border-radius: 3.75rem;
+}
+
+.FI-aboutFuture:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 22.5rem;
+    height: 17.1875rem;
+    align-self: stretch;
+    order: 0;
+    background-color: $bgcolor-secondary;
+    color: $font-colorSecond;
+}
+
+.FI-aboutFuture:hover {
+    background-color: $bgcolor-dark;
+}
+
+.btn-3:hover {
+    position: absolute;
+    background-color: $bgcolor-dark;
+    font-size: 25px;
+    opacity: 1;
+    border: solid;
+    border-color: $bordercolor-primary;
+    border-width: auto;
+    border-radius: 3.75rem;
+    -webkit-border-radius: 3.75rem;
+    -moz-border-radius: 3.75rem;
+    -ms-border-radius: 3.75rem;
+    -o-border-radius: 3.75rem;
+}
+
+
+/* Fila acerca IoT, consejos para Switches y consejos para Regador SOPORTE*/
+
+.gridContainer-F4 {
+    grid-area: 4 / 1 / 6 / 13;
+    max-height: 25rem;
+}
+
+.flex-container-F4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: normal;
+    align-content: stretch;
+    margin: $marginM;
+}
+
+.FI-acercaIoT:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 22.5rem;
+    height: 17.1875rem;
+    align-self: stretch;
+    order: 0;
+    background-color: $bgcolor-secondary;
+    color: $font-colorSecond;
+}
+
+.FI-acercaIoT:hover {
+    background-color: $bgcolor-dark;
+}
+
+.btn-4:hover {
+    position: absolute;
+    background-color: $bgcolor-dark;
+    font-size: 25px;
+    opacity: 1;
+    border: solid;
+    border-color: $bordercolor-primary;
+    border-width: auto;
+    border-radius: 3.75rem;
+    -webkit-border-radius: 3.75rem;
+    -moz-border-radius: 3.75rem;
+    -ms-border-radius: 3.75rem;
+    -o-border-radius: 3.75rem;
+}
+
+.FI-consejosSwitches:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 22.5rem;
+    height: 17.1875rem;
+    align-self: stretch;
+    order: 0;
+    background-color: $bgcolor-secondary;
+    color: $font-colorPrimary;
+}
+
+.FI-consejosSwitches:hover {
+    background-color: $bgcolor-dark;
+}
+
+.btn-5:hover {
+    position: absolute;
+    background-color: $bgcolor-dark;
+    font-size: 25px;
+    opacity: 1;
+    border: solid;
+    border-color: $bordercolor-primary;
+    border-width: auto;
+    border-radius: 3.75rem;
+    -webkit-border-radius: 3.75rem;
+    -moz-border-radius: 3.75rem;
+    -ms-border-radius: 3.75rem;
+    -o-border-radius: 3.75rem;
+}
+
+.FI-ConsejosRegadores:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 22.5rem;
+    height: 17.1875rem;
+    align-self: stretch;
+    order: 0;
+    background-color: $bgcolor-secondary;
+    color: $font-colorSecond;
+}
+
+.FI-ConsejosRegadores:hover {
+    background-color: $bgcolor-dark;
+}
+
+.btn-6:hover {
+    position: absolute;
+    background-color: $bgcolor-dark;
+    font-size: 25px;
+    opacity: 1;
+    border: solid;
+    border-color: $bordercolor-primary;
+    border-width: auto;
+    border-radius: 3.75rem;
+    -webkit-border-radius: 3.75rem;
+    -moz-border-radius: 3.75rem;
+    -ms-border-radius: 3.75rem;
+    -o-border-radius: 3.75rem;
+}
+
+
+/*Fila de registro de producto, Garantia y servicios de reparacion */
+
+.gridContainer-F5 {
+    grid-area: 6 / 1 / 7 / 13;
+}
+
+.flex-container-F5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: start;
+    justify-items: stretch;
+    align-content: stretch;
+    margin: $marginM;
+}
+
+.FI-RegistroProd:nth-child(1) {
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: stretch;
+    justify-self: stretch;
+    order: 0;
+    background-color: $bgcolor-third;
+}
+
+.boton-soporte {
+    background-color: $bgcolor-third;
+    border: none;
+    color: $font-colorSecond;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0.05rem 0.05rem;
+    transition-duration: 0.8s;
+    transform-origin: bottom;
+    cursor: pointer;
+    border: 0.1875rem solid #494242;
+}
+
+.button1 {
+    background-color: $bgcolor-third;
+    color: #ededed;
+    border: 0.1875rem solid #494242;
+}
+
+.button1:hover {
+    background-color: $font-colorSecond;
+    color: $bgcolor-dark;
+}
+
+.FI-InfoGarantia:nth-child(2) {
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: stretch;
+    justify-self: stretch;
+    order: 0;
+    background-color: $bgcolor-third;
+}
+
+.button2 {
+    background-color: $bgcolor-third;
+    color: $font-colorSecond;
+    border: 0.1875rem solid #494242;
+}
+
+.button2:hover {
+    background-color: $font-colorSecond;
+    color: $bgcolor-dark;
+}
+
+.FI-ServiciosReparacion:nth-child(3) {
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: stretch;
+    justify-self: stretch;
+    order: 0;
+    background-color: $bgcolor-third;
+}
+
+.button3 {
+    background-color: $bgcolor-secondary;
+    color: $font-colorSecond;
+    border: 0.1875rem solid #494242;
+}
+
+.button3:hover {
+    background-color: $font-colorSecond;
+    color: $bgcolor-dark;
+}
+
+
+/* Fila de reclamos */
+
+.gridContainer-F6 {
+    grid-area: 7 / 1 / 9 / 13;
+}
+
+.flex-container-F6 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: center;
+    align-content: stretch;
+    text-align: center;
+    color: $font-colorPrimary;
+}
+
+.fi-txt-chat:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: stretch;
+    order: 0;
+}
+
+.fi-logo-whatsapp:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.btn-whatsapp {
+    width: 3.4375rem;
+    height: 3.4375rem;
+    line-height: 3.4375rem;
+    bottom: 1.875rem;
+    right: 1.875rem;
+    color: $btn-wpp-color;
+    background-color: $bgcolor-dark;
+    border-radius: 3.125rem;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: ($font-size-XL + 5px);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    -webkit-border-radius: 3.125rem;
+    -moz-border-radius: 3.125rem;
+    -ms-border-radius: 3.125rem;
+    -o-border-radius: 3.125rem;
+}
+
+.btn-whatsapp:hover {
+    text-decoration: none;
+    color: $btn-wpp-color;
+    background-color: $font-colorPrimary;
+}
+
+.fi-logo-gmail:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: center;
+    justify-self: center;
+    order: 0;
+}
+
+.btn-gmail {
+    width: 3.4375rem;
+    height: 3.4375rem;
+    line-height: 3.4375rem;
+    bottom: 1.875rem;
+    right: 1.875rem;
+    color: $bordercolor-primary;
+    background-color: $bgcolor-dark;
+    border-radius: 3.125rem;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: ($font-size-XL + 5px);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    -webkit-border-radius: 3.125rem;
+    -moz-border-radius: 3.125rem;
+    -ms-border-radius: 3.125rem;
+    -o-border-radius: 3.125rem;
+}
+
+.btn-gmail:hover {
+    text-decoration: none;
+    color: $bgcolor-dark;
+    background-color: $font-colorPrimary;
+}
+
+
+/* Footer */
+
+a:link a {
+    color: $font-colorPrimary;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.gridFooter-soporte {
+    grid-area: 9 / 1 / 10 / 13;
+}
+
+.flex-containerFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    width: $maxwidth;
+    height: 15rem;
+    margin: $marginM;
+    font-family: $font-stack;
+    color: $font-colorPrimary;
+    background-color: $bgcolor-dark;
+    background-image: linear-gradient(bottom #000000, #e7dfdf);
+}
+
+.flexItem-footer1:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33.33%;
+    align-self: stretch;
+    order: 0;
+}
+
+ul.footer-menu #liMenuFooter {
+    text-decoration: none;
+    list-style: none;
+    font-family: $font-stack;
+    font-size: $font-size-M;
+    color: $font-colorPrimary;
+}
+
+#liMenuFooter #lifooter {
+    list-style-type: none;
+    color: $font-colorPrimary;
+    text-decoration: none;
+    text-align: start;
+    font-size: $font-size-M;
+    font-family: $font-stack;
+}
+
+.flexItem-footer2:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: $basis;
+    align-self: stretch;
+    text-align: center;
+    order: 0;
+}
+
+.flexItem-footer3:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: $basis;
+    align-self: stretch;
+    text-align: center;
+    order: 0;
+}
+
+.icon-instagram {
+    font-size: $font-size-XL;
+    color: $font-colorSecond;
+    text-align: start;
+    text-decoration: none;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-instagram:hover {
+    transition-duration: $transitionLogoRS;
+    font-size: $font-size-XL;
+    background-color: $font-colorPrimary;
+    color: $bgcolor-dark;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-facebook {
+    font-size: 45px;
+    color: $font-colorPrimary;
+    text-align: start;
+    text-decoration: none;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-facebook:hover {
+    transition-duration: $transitionLogoRS;
+    font-size: $font-size-XL;
+    background-color: $font-colorPrimary;
+    color: $bgcolor-dark;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-twitter {
+    font-size: $font-size-XL;
+    color: $font-colorPrimary;
+    text-align: start;
+    text-decoration: none;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+.icon-twitter:hover {
+    transition-duration: $transitionLogoRS;
+    font-size: $font-size-XL;
+    background-color: $font-colorPrimary;
+    color: $bgcolor-dark;
+    border-radius: 0.9375rem;
+    -webkit-border-radius: 0.9375rem;
+    -moz-border-radius: 0.9375rem;
+    -ms-border-radius: 0.9375rem;
+    -o-border-radius: 0.9375rem;
+}
+
+
+/* Estilo de NOSOTROS */
+
+.gridContainer-Nos {
+    display: grid;
+    grid-template-columns: $templatecolumnsindex;
+    grid-template-rows: $templaterowsnos;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    background-color: #000000;
+}
+
+
+/* Logo y nav NOS*/
+
+.LogoNos1-Grid {
+    grid-area: 1 / 1 / 2 / 4;
+    margin: $marginXS;
+}
+
+.NavNos2-Grid {
+    grid-area: 1 / 3 / 2 / 13;
+    margin-top: $marginM;
+    padding: $paddingS;
+}
+
+
+/* Fin Logo y Nav (NOS) */
+
+
+/* Quienes Somos (NOS) */
+
+.Grid3-QS {
+    grid-area: 2 / 1 / 3 / 13;
+}
+
+.flexConteinerQs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    width: $widthM;
+    padding: $paddingS;
+}
+
+.flexItem-QS:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 30rem;
+    align-self: center;
+    justify-self: center;
+    order: 0;
+    margin: $marginM;
+    background-image: url(../imagenes/NosotrosFondo.jpg);
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.txtQS {
+    color: #e7dfdf;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+
+/* Que Hacemos (NOS)*/
+
+.Grid4-QH {
+    grid-area: 3 / 1 / 4 / 13;
+}
+
+.flexContainerQh {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: $widthM;
+    padding: $paddingS;
+}
+
+.flexItem-QH:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 30rem;
+    align-self: center;
+    justify-self: center;
+    order: 0;
+    margin: $marginM;
+    background-image: url(../imagenes/NosotrosFondo.jpg);
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+
+/*Botones Nos*/
+
+.Grid5-Btns {
+    grid-area: 4 / 1 / 5 / 13;
+}
+
+.flexContainerBTNS {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: normal;
+}
+
+.fi-btn-WWU:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+}
+
+.fi-btn-AMS:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+}
+
+#BTNNOS {
+    background-color: #494242;
+    color: $font-colorSecond;
+    font-size: $font-size-M;
+    font-family: $font-stack;
+    border-color: $font-colorSecond;
+}
+
+#BTNNOS:hover {
+    background-color: $font-colorSecond;
+    color: $bgcolor-dark;
+    font-size: $font-size-M;
+    transition: $transitionLogoRS;
+    -webkit-transition: $transitionLogoRS;
+    -moz-transition: $transitionLogoRS;
+    -ms-transition: $transitionLogoRS;
+    -o-transition: $transitionLogoRS;
+}
+
+.FooterGrid6 {
+    grid-area: 5 / 1 / 6 / 13;
+}
+
+.txtNOS {
+    color: $bgcolor-dark;
+    font-family: $font-stack;
+    font-size: $font-size-M;
+}
+
+
+/* Productos Future */
+
+.GridContainerProd {
+    display: grid;
+    grid-template-columns: $templatecolumnsindex;
+    grid-template-rows: $templaterowsprod;
+    grid-column-gap: $columngap;
+    grid-row-gap: $row-gap;
+    background-color: $bgcolor-dark;
+    color: $font-colorSecond;
+}
+
+.gridLogo-prod {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.gridNav-prod {
+    grid-area: 1 / 3 / 2 / 13;
+    margin: $marginM;
+}
+
+.gridLuminaria {
+    grid-area: 2 / 1 / 3 / 13;
+}
+
+.flexContainerPL {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: $width;
+    height: 55rem;
+    background-image: url(./Imagenes/houseligth.jpg);
+    background-repeat: no-repeat;
+    margin: $marginM;
+}
+
+.cardTitleSProd {
+    text-align: left;
+    font-size: 32px;
+    font-family: $font-stack;
+    color: $font-colorSecond;
+    background-color: $bgcolor-dark;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-left: 1.5rem;
+    width: $maxwidth;
+}
+
+.cardTitleSProd:hover {
+    color: $font-colorThird;
+    transition: $trasitioncards;
+    -webkit-transition: $trasitioncards;
+    -moz-transition: $trasitioncards;
+    -ms-transition: $trasitioncards;
+    -o-transition: $trasitioncards;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.fiCard1Prod:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.fiCard2Prod:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.fiCard3Prod:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.card-body {
+    color: $bgcolor-dark;
+    font-family: $font-stack;
+}
+
+.girdJardinprod {
+    grid-area: 3 / 1 / 4 / 13;
+}
+
+.flexContainerPJ {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 98%;
+    height: 55rem;
+    background-color: $bgcolor-dark;
+    background-image: url(./Imagenes/fondoJardin.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0.5rem;
+}
+
+.fiCard1J:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.fiCard2J:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.fiCard3J:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.gridSeguridad {
+    grid-area: 4 / 1 / 5 / 13;
+}
+
+.flexContainerSeg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 98%;
+    height: 55rem;
+    background-color: #000000;
+    background-image: url(./Imagenes/haouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0.5rem;
+}
+
+.fiCard1Seg:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.fiCard2Seg:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.fiCard3Seg:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    align-self: stretch;
+    order: 0;
+    margin: 0.5rem;
+    align-self: center;
+}
+
+.gridFooter-prod {
+    grid-area: 6 / 1 / 7 / 13;
+}
+
+.card {
+    min-height: 28.75rem;
+}

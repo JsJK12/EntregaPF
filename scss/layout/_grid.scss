@@ -1,0 +1,22 @@
+/* Index */
+
+$containergrid: grid;
+$templatecolumnsindex: repeat(12, 1fr);
+$templaterowsindex: repeat(2, 4rem) repeat(4, rem)repeat(1, 20rem);
+
+/* Contacto */
+
+$templatecolumnscontact: repeat(12, 1fr);
+$templaterowscontact: repeat(5, 1fr);
+
+/* Soporte */
+
+$templaterowssoporte: repeat(2, 3rem) repeat(6, 25rem) repeat(1, 20rem);
+
+/* nosotros */
+
+$templaterowsnos: repeat(1, 4rem) repeat(3, 45rem) repeat(1, 25rem);
+
+/* productos */
+
+$templaterowsprod: repeat(1, 5rem) repeat(4, 60rem)repeat(1, 25rem);
