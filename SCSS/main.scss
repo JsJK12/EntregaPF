@@ -223,6 +223,11 @@
 .linkProd:hover {
     background: $bgcolor-dark;
     color: $font-colorThird;
+    transition: $trasitioncards;
+    -webkit-transition: $trasitioncards;
+    -moz-transition: $trasitioncards;
+    -ms-transition: $trasitioncards;
+    -o-transition: $trasitioncards;
 }
 
 
