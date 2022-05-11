@@ -11,7 +11,8 @@
 /* estilo */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  scroll-behavior: smooth; }
 
 .containerGrid {
   display: grid;
@@ -112,10 +113,13 @@
 .cardImgApp4 {
   grid-area: 3 / 1 / 4 / 13;
   border-color: #c9c9c9;
-  width: 80%;
   margin: 0.95rem;
   align-self: center;
-  justify-self: flex-end; }
+  justify-self: center; }
+
+.card .mb-3 {
+  justify-self: center;
+  align-self: center; }
 
 .col-md-8 {
   background-color: #000000;
@@ -131,8 +135,7 @@
 .cardImgIoT5 {
   grid-area: 4 / 1 / 5 / 13;
   margin: 0.95rem;
-  width: 80%;
-  justify-self: flex-end;
+  justify-self: center;
   align-self: center; }
 
 #cardIndexIot {
@@ -170,7 +173,12 @@
 
 .linkPromos:hover {
   background: #000000;
-  color: #0b9c84; }
+  color: #0b9c84;
+  transition: 3s;
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s; }
 
 .linkProd {
   outline: none;
@@ -195,7 +203,7 @@
 /*Footer*/
 .footer9 {
   grid-area: 7 / 1 / 8 / 13;
-  width: 100%; }
+  width: 98%; }
 
 .flex-containerFooter {
   display: flex;
@@ -207,7 +215,8 @@
   font-family: "poppins" "sans-serif";
   color: #ffffff;
   background-color: #000000;
-  background-image: linear-gradient(#000000, #454444); }
+  background-image: linear-gradient(#000000, #454444);
+  margin-right: 2rem; }
 
 .flexItem-footer1:nth-child(1) {
   display: block;
@@ -263,7 +272,7 @@
   -o-border-radius: 0.9375rem; }
 
 .icon-instagram:hover {
-  transition-duration: 0.5seg;
+  transition-duration: 0.5s;
   font-size: 45px;
   background-color: #000000;
   color: #ffffff;
@@ -285,7 +294,7 @@
   -o-border-radius: 0.9375rem; }
 
 .icon-facebook:hover {
-  transition-duration: 0.5seg;
+  transition-duration: 0.5s;
   font-size: 45px;
   background-color: #000000;
   color: #000000;
@@ -307,7 +316,7 @@
   -o-border-radius: 0.9375rem; }
 
 .icon-twitter:hover {
-  transition-duration: 0.5seg;
+  transition-duration: 0.5s;
   font-size: 45px;
   background-color: #000000;
   color: #000000;
@@ -354,17 +363,24 @@
   margin-right: 0.125rem;
   border: 0; }
 
+.future {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold; }
+
 /*Formulario de contacto*/
 #Form1-contact {
   grid-area: 2 / 1 / 5 / 13;
   width: 80%;
   height: 20rem;
+  justify-items: center;
+  align-items: center;
   background-color: #000000;
   color: #ededed;
   font-style: italic;
   font-family: "poppins" "sans-serif";
   font-size: 18px;
-  margin: 2.5rem;
+  margin-left: 2.5rem;
   border-radius: 150rem;
   -webkit-border-radius: 150rem;
   -moz-border-radius: 150rem;
@@ -379,14 +395,15 @@ a:link a {
   background-color: transparent; }
 
 .footer32-contact {
-  grid-area: 5 / 1 / 6 / 13; }
+  grid-area: 5 / 1 / 6 / 13;
+  max-width: 98%; }
 
 /* Estilo de page Soporte */
 /*Grid soporte*/
 .containerGrid-soporte {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 3rem) repeat(6, 25rem) repeat(1, 20rem);
+  grid-template-rows: repeat(2, 3rem) repeat(6, 25rem) repeat(1, 16.5rem);
   grid-column-gap: 0;
   grid-row-gap: 0;
   background-color: #000000; }
@@ -426,7 +443,7 @@ a:link a {
   text-align: start;
   margin: 0.32rem, 0.95rem;
   opacity: 0.6;
-  transition: 0.5seg;
+  transition: 0.5s;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
@@ -437,10 +454,10 @@ a:link a {
   font-size: 18px;
   font-weight: lighter;
   font-style: italic;
-  -webkit-transition: 0.5seg;
-  -moz-transition: 0.5seg;
-  -ms-transition: 0.5seg;
-  -o-transition: 0.5seg; }
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s; }
 
 .stylebtn {
   height: 15rem;
@@ -738,9 +755,9 @@ a:link a {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: normal;
+  justify-content: space-around;
   align-items: center;
-  align-content: stretch;
+  align-content: space-around;
   text-align: center;
   color: #ffffff; }
 
@@ -749,7 +766,7 @@ a:link a {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
-  align-self: stretch;
+  align-self: center;
   order: 0; }
 
 .fi-logo-whatsapp:nth-child(2) {
@@ -757,7 +774,8 @@ a:link a {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
-  align-self: auto;
+  align-self: center;
+  justify-self: center;
   order: 0; }
 
 .btn-whatsapp {
@@ -770,7 +788,7 @@ a:link a {
   background-color: #000000;
   border-radius: 3.125rem;
   text-align: center;
-  margin: 0.5rem;
+  margin: 1rem;
   font-size: 50px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -791,7 +809,8 @@ a:link a {
   flex-basis: auto;
   align-self: center;
   justify-self: center;
-  order: 0; }
+  order: 0;
+  margin: 0.125rem; }
 
 .btn-gmail {
   width: 3.4375rem;
@@ -803,7 +822,7 @@ a:link a {
   background-color: #000000;
   border-radius: 3.125rem;
   text-align: center;
-  margin: 0.5rem;
+  margin: 1rem;
   font-size: 50px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -824,7 +843,8 @@ a:link a {
   background-color: transparent; }
 
 .gridFooter-soporte {
-  grid-area: 9 / 1 / 10 / 13; }
+  grid-area: 9 / 1 / 10 / 13;
+  max-width: 98%; }
 
 .flex-containerFooter {
   display: flex;
@@ -894,7 +914,7 @@ ul.footer-menu #liMenuFooter {
   -o-border-radius: 0.9375rem; }
 
 .icon-instagram:hover {
-  transition-duration: 0.5seg;
+  transition-duration: 0.5s;
   font-size: 45px;
   background-color: #ffffff;
   color: #000000;
@@ -916,7 +936,7 @@ ul.footer-menu #liMenuFooter {
   -o-border-radius: 0.9375rem; }
 
 .icon-facebook:hover {
-  transition-duration: 0.5seg;
+  transition-duration: 0.5s;
   font-size: 45px;
   background-color: #ffffff;
   color: #000000;
@@ -938,7 +958,7 @@ ul.footer-menu #liMenuFooter {
   -o-border-radius: 0.9375rem; }
 
 .icon-twitter:hover {
-  transition-duration: 0.5seg;
+  transition-duration: 0.5s;
   font-size: 45px;
   background-color: #ffffff;
   color: #000000;
@@ -952,7 +972,7 @@ ul.footer-menu #liMenuFooter {
 .gridContainer-Nos {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(1, 4rem) repeat(3, 45rem) repeat(1, 25rem);
+  grid-template-rows: repeat(1, 4rem) repeat(3, 45rem) repeat(1, 16.5rem);
   grid-column-gap: 0;
   grid-row-gap: 0;
   background-color: #000000; }
@@ -992,7 +1012,7 @@ ul.footer-menu #liMenuFooter {
   justify-self: center;
   order: 0;
   margin: 0.95rem;
-  background-image: url(../imagenes/NosotrosFondo.jpg);
+  background-image: url(../imagenes/NosotrosFondo-min.jpeg);
   background-size: cover;
   background-color: transparent;
   background-repeat: no-repeat; }
@@ -1026,7 +1046,7 @@ ul.footer-menu #liMenuFooter {
   justify-self: center;
   order: 0;
   margin: 0.95rem;
-  background-image: url(../imagenes/NosotrosFondo.jpg);
+  background-image: url(../imagenes/NosotrosFondo-min.jpeg);
   background-size: cover;
   background-color: transparent;
   background-repeat: no-repeat; }
@@ -1072,14 +1092,15 @@ ul.footer-menu #liMenuFooter {
   background-color: #ededed;
   color: #000000;
   font-size: 18px;
-  transition: 0.5seg;
-  -webkit-transition: 0.5seg;
-  -moz-transition: 0.5seg;
-  -ms-transition: 0.5seg;
-  -o-transition: 0.5seg; }
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s; }
 
 .FooterGrid6 {
-  grid-area: 5 / 1 / 6 / 13; }
+  grid-area: 5 / 1 / 6 / 13;
+  max-width: 98%; }
 
 .txtNOS {
   color: #000000;
@@ -1090,7 +1111,7 @@ ul.footer-menu #liMenuFooter {
 .GridContainerProd {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(1, 5rem) repeat(4, 60rem) repeat(1, 25rem);
+  grid-template-rows: repeat(1, 5rem) repeat(4, 60rem) repeat(1, 16.5rem);
   grid-column-gap: 0;
   grid-row-gap: 0;
   background-color: #000000;
@@ -1115,7 +1136,7 @@ ul.footer-menu #liMenuFooter {
   align-content: center;
   width: 98%;
   height: 55rem;
-  background-image: url(./Imagenes/houseligth.jpg);
+  background-image: url(../imagenes/houseligth-min.jpeg);
   background-repeat: no-repeat;
   margin: 0.95rem; }
 
@@ -1128,15 +1149,15 @@ ul.footer-menu #liMenuFooter {
   text-transform: capitalize;
   text-decoration: underline;
   margin-left: 1.5rem;
-  width: 100%; }
+  width: 98%; }
 
 .cardTitleSProd:hover {
   color: #0b9c84;
-  transition: 3seg;
-  -webkit-transition: 3seg;
-  -moz-transition: 3seg;
-  -ms-transition: 3seg;
-  -o-transition: 3seg;
+  transition: 3s;
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
   font-size: 45px;
   text-transform: uppercase; }
 
@@ -1187,7 +1208,7 @@ ul.footer-menu #liMenuFooter {
   width: 98%;
   height: 55rem;
   background-color: #000000;
-  background-image: url(./Imagenes/fondoJardin.jpg);
+  background-image: url(../imagenes/fondoJardin-min.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0.5rem; }
@@ -1235,7 +1256,7 @@ ul.footer-menu #liMenuFooter {
   width: 98%;
   height: 55rem;
   background-color: #000000;
-  background-image: url(./Imagenes/haouse.jpg);
+  background-image: url(../imagenes/haouse-min.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1272,7 +1293,6 @@ ul.footer-menu #liMenuFooter {
   align-self: center; }
 
 .gridFooter-prod {
-  grid-area: 6 / 1 / 7 / 13; }
-
-.card {
-  min-height: 28.75rem; }
+  grid-area: 6 / 1 / 7 / 13;
+  margin-right: 0.125rem;
+  max-width: 98%; }

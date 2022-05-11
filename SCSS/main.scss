@@ -128,10 +128,14 @@
 .cardImgApp4 {
     grid-area: 3 / 1 / 4 / 13;
     border-color: $bordercolor-primary;
-    width: $widthM;
     margin: $marginM;
     align-self: center;
-    justify-self: flex-end;
+    justify-self: center;
+}
+
+.card .mb-3 {
+    justify-self: center;
+    align-self: center;
 }
 
 .col-md-8 {
@@ -152,8 +156,7 @@
 .cardImgIoT5 {
     grid-area: 4 / 1 / 5 / 13;
     margin: $marginM;
-    width: $widthM;
-    justify-self: flex-end;
+    justify-self: center;
     align-self: center;
 }
 
@@ -201,6 +204,11 @@
 .linkPromos:hover {
     background: $bgcolor-dark;
     color: $font-colorThird;
+    transition: $trasitioncards;
+    -webkit-transition: $trasitioncards;
+    -moz-transition: $trasitioncards;
+    -ms-transition: $trasitioncards;
+    -o-transition: $trasitioncards;
 }
 
 .linkProd {
@@ -233,7 +241,7 @@
 
 .footer9 {
     grid-area: 7 / 1 / 8 / 13;
-    width: $maxwidth;
+    width: $width;
 }
 
 .flex-containerFooter {
@@ -247,6 +255,7 @@
     color: $font-colorPrimary;
     background-color: $bgcolor-dark;
     background-image: linear-gradient(#000000, #454444);
+    margin-right: 2rem;
 }
 
 .flexItem-footer1:nth-child(1) {
@@ -414,6 +423,12 @@
     border: 0;
 }
 
+.future {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+}
+
 
 /*Formulario de contacto*/
 
@@ -421,12 +436,14 @@
     grid-area: 2 / 1 / 5 / 13;
     width: $widthM;
     height: 20rem;
+    justify-items: center;
+    align-items: center;
     background-color: $bgcolor-dark;
     color: $font-colorSecond;
     font-style: italic;
     font-family: $font-stack;
     font-size: $font-size-M;
-    margin: 2.5rem;
+    margin-left: 2.5rem;
     border-radius: 150rem;
     -webkit-border-radius: 150rem;
     -moz-border-radius: 150rem;
@@ -448,6 +465,7 @@ a:link a {
 
 .footer32-contact {
     grid-area: 5 / 1 / 6 / 13;
+    max-width: $width;
 }
 
 
@@ -867,9 +885,9 @@ a:link a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: normal;
+    justify-content: space-around;
     align-items: center;
-    align-content: stretch;
+    align-content: space-around;
     text-align: center;
     color: $font-colorPrimary;
 }
@@ -879,7 +897,7 @@ a:link a {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
-    align-self: stretch;
+    align-self: center;
     order: 0;
 }
 
@@ -888,7 +906,8 @@ a:link a {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
-    align-self: auto;
+    align-self: center;
+    justify-self: center;
     order: 0;
 }
 
@@ -902,7 +921,7 @@ a:link a {
     background-color: $bgcolor-dark;
     border-radius: 3.125rem;
     text-align: center;
-    margin: 0.5rem;
+    margin: 1rem;
     font-size: ($font-size-XL + 5px);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 10;
@@ -926,6 +945,7 @@ a:link a {
     align-self: center;
     justify-self: center;
     order: 0;
+    margin: $marginXS
 }
 
 .btn-gmail {
@@ -938,7 +958,7 @@ a:link a {
     background-color: $bgcolor-dark;
     border-radius: 3.125rem;
     text-align: center;
-    margin: 0.5rem;
+    margin: 1rem;
     font-size: ($font-size-XL + 5px);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 10;
@@ -965,6 +985,7 @@ a:link a {
 
 .gridFooter-soporte {
     grid-area: 9 / 1 / 10 / 13;
+    max-width: $width;
 }
 
 .flex-containerFooter {
@@ -1261,6 +1282,7 @@ ul.footer-menu #liMenuFooter {
 
 .FooterGrid6 {
     grid-area: 5 / 1 / 6 / 13;
+    max-width: $width;
 }
 
 .txtNOS {
@@ -1318,7 +1340,7 @@ ul.footer-menu #liMenuFooter {
     text-transform: capitalize;
     text-decoration: underline;
     margin-left: 1.5rem;
-    width: $maxwidth;
+    width: $width;
 }
 
 .cardTitleSProd:hover {
@@ -1479,8 +1501,6 @@ ul.footer-menu #liMenuFooter {
 
 .gridFooter-prod {
     grid-area: 6 / 1 / 7 / 13;
-}
-
-.card {
-    min-height: 28.75rem;
+    margin-right: $marginXS;
+    max-width: $width;
 }
