@@ -199,10 +199,13 @@
     text-align: center;
     line-height: 3;
     color: $font-colorPrimary;
+    border: $bordercolor-primary;
+    border-style: hidden;
 }
 
 .linkPromos:hover {
     background: $bgcolor-dark;
+    border-style: groove;
     color: $font-colorThird;
     transition: $trasitioncards;
     -webkit-transition: $trasitioncards;
@@ -218,10 +221,13 @@
     text-align: center;
     line-height: 3;
     color: $font-colorSecond;
+    border: $bordercolor-primary;
+    border-style: hidden;
 }
 
 .linkProd:hover {
     background: $bgcolor-dark;
+    border-style: groove;
     color: $font-colorThird;
     transition: $trasitioncards;
     -webkit-transition: $trasitioncards;

@@ -169,10 +169,13 @@
   display: inline-block;
   text-align: center;
   line-height: 3;
-  color: #ffffff; }
+  color: #ffffff;
+  border: #c9c9c9;
+  border-style: hidden; }
 
 .linkPromos:hover {
   background: #000000;
+  border-style: groove;
   color: #0b9c84;
   transition: 3s;
   -webkit-transition: 3s;
@@ -186,10 +189,13 @@
   display: inline-block;
   text-align: center;
   line-height: 3;
-  color: #ededed; }
+  color: #ededed;
+  border: #c9c9c9;
+  border-style: hidden; }
 
 .linkProd:hover {
   background: #000000;
+  border-style: groove;
   color: #0b9c84;
   transition: 3s;
   -webkit-transition: 3s;
