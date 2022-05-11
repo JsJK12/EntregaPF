@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .containerGrid {
@@ -1157,7 +1158,7 @@ ul.footer-menu #liMenuFooter {
     justify-self: center;
     order: 0;
     margin: $marginM;
-    background-image: url(../imagenes/NosotrosFondo.jpg);
+    background-image: url(../imagenes/NosotrosFondo-min.jpeg);
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -1197,7 +1198,7 @@ ul.footer-menu #liMenuFooter {
     justify-self: center;
     order: 0;
     margin: $marginM;
-    background-image: url(../imagenes/NosotrosFondo.jpg);
+    background-image: url(../imagenes/NosotrosFondo-min.jpeg);
     background-size: cover;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -1303,7 +1304,7 @@ ul.footer-menu #liMenuFooter {
     align-content: center;
     width: $width;
     height: 55rem;
-    background-image: url(./Imagenes/houseligth.jpg);
+    background-image: url(../imagenes/houseligth-min.jpeg);
     background-repeat: no-repeat;
     margin: $marginM;
 }
@@ -1383,7 +1384,7 @@ ul.footer-menu #liMenuFooter {
     width: 98%;
     height: 55rem;
     background-color: $bgcolor-dark;
-    background-image: url(./Imagenes/fondoJardin.jpg);
+    background-image: url(../imagenes/fondoJardin-min.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0.5rem;
@@ -1436,7 +1437,7 @@ ul.footer-menu #liMenuFooter {
     width: 98%;
     height: 55rem;
     background-color: #000000;
-    background-image: url(./Imagenes/haouse.jpg);
+    background-image: url(../imagenes/haouse-min.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
