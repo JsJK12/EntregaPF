@@ -175,7 +175,6 @@
 
 .linkPromos:hover {
   background: #000000;
-  border-style: groove;
   color: #0b9c84;
   transition: 3s;
   -webkit-transition: 3s;
@@ -195,7 +194,6 @@
 
 .linkProd:hover {
   background: #000000;
-  border-style: groove;
   color: #0b9c84;
   transition: 3s;
   -webkit-transition: 3s;
