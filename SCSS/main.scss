@@ -1,13 +1,9 @@
+@import "layout/global";
 @import "layout/grid";
 @import "utilities/variables";
+@import "utilities/mediaquerys";
 
 /* estilo */
-
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
 
 .containerGrid {
     display: $containergrid;
@@ -31,12 +27,11 @@
     font-family: $font-stack;
     font-weight: bold;
     font-style: normal;
-    font-size: $font-size-XL;
+    font-size: 25px;
     color: $font-colorPrimary;
     background-color: $bgcolor-dark;
     justify-items: stretch;
-    margin-left: $marginXS;
-    margin-right: $marginXS;
+    margin: $marginXS !important;
 }
 
 

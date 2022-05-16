@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
 /* Index */
 /* Contacto */
 /* Soporte */
@@ -9,11 +15,6 @@
 /*medidas*/
 /* transiciones */
 /* estilo */
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth; }
-
 .containerGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -34,12 +35,11 @@
   font-family: "poppins" "sans-serif";
   font-weight: bold;
   font-style: normal;
-  font-size: 45px;
+  font-size: 25px;
   color: #ffffff;
   background-color: #000000;
   justify-items: stretch;
-  margin-left: 0.125rem;
-  margin-right: 0.125rem; }
+  margin: 0.125rem !important; }
 
 /*Navegador*/
 #navBar2 {
