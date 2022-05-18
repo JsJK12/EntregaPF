@@ -31,7 +31,6 @@
     color: $font-colorPrimary;
     background-color: $bgcolor-dark;
     justify-items: stretch;
-    margin: $marginXS !important;
 }
 
 
@@ -39,10 +38,10 @@
 
 #navBar2 {
     grid-area: 1 / 2 / 2 / 13;
-    width: $maxwidth;
+    width: $widthM;
     background-color: $bgcolor-dark;
     align-self: stretch;
-    margin-left: $marginXS;
+    margin-left: ($marginXS - 0.0625rem);
     margin-top: $marginM;
     margin-right: $marginXS;
     border: 0;
@@ -173,6 +172,11 @@
     font-size: $font-size-M;
     font-style: oblique;
     text-align: center;
+    width: 30rem;
+    height: 100%;
+    align-self: baseline;
+    justify-self: flex-start;
+    margin: 2rem;
 }
 
 
@@ -185,6 +189,11 @@
     font-size: $font-size-M;
     font-style: oblique;
     text-align: center;
+    width: 30rem;
+    height: 100%;
+    align-self: baseline;
+    justify-self: flex-end;
+    margin: 2rem;
 }
 
 .linkPromos {
@@ -251,7 +260,7 @@
 .flex-containerFooter {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
     align-content: stretch;

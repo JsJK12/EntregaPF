@@ -1,93 +1,115 @@
-@media (max-width: 767.98px) {
-    .containerGrid {
-        display: grid;
-        grid-template-columns: repeat(3, 125px);
-        grid-template-rows: 44px 350px repeat(4, 300px) 250px;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        width: 360px;
-        height: 275px;
+    @import "layout/grid";
+    @media (max-width:575px) {
+        .containerGrid {
+            display: $containergrid;
+            grid-template-columns: repeat(3, 7.8125rem);
+            grid-template-rows: 2.75rem 21.875rem repeat(4, 18.75rem) 15.625rem;
+            max-width: $maxwidth;
+            grid-column-gap: $columngap;
+            grid-row-gap: $row-gap;
+            background-color: $bgcolor-dark;
+            margin: $marginXS;
+        }
+        #navBar2 {
+            justify-self: start;
+            align-self: center;
+            grid-area: 1 / 1 / 2 / 2;
+            width: 14.75rem;
+            height: 2.625rem;
+        }
+        .logo1 {
+            justify-self: center;
+            align-self: center;
+            grid-area: 1 / 2 / 2 / 4;
+            width: 7rem;
+            height: 2.625rem;
+        }
     }
-    .navBar2 {
-        justify-self: start;
-        align-self: center;
-        grid-area: 1 / 1 / 2 / 2;
-        width: 112px;
-        height: 40px;
+    
+    @media (min-width:576px) and (max-width:767px) {
+        body {
+            font-size: 8px;
+        }
+        .containerGrid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10, 1fr);
+            max-height: 75rem;
+            max-width: 100%;
+            grid-column-gap: 0;
+            grid-row-gap: 0.3125rem;
+            background-color: #000000;
+        }
+        .logo1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .navBar2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .carouselPromo3 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+        .carouselProd-App8 {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+        .cardImgIoT5 {
+            grid-area: 5 / 1 / 6 / 2;
+        }
+        .cardImgApp4 {
+            grid-area: 6 / 1 / 7 / 2;
+        }
+        .comboUser7 {
+            grid-area: 7 / 1 / 8 / 2;
+        }
+        .promotions6 {
+            grid-area: 8 / 1 / 9 / 2;
+        }
+        .footer9 {
+            grid-area: 9 / 1 / 10 / 2;
+        }
     }
-    .logo1 {
-        justify-self: center;
-        align-self: center;
-        grid-area: 1 / 2 / 2 / 4;
-        width: 236px;
-        height: 42px;
+    
+    @media(min-width:768px) and (max-width:991px) {
+        body {
+            font-size: 8px;
+        }
+        .containerGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            max-height: 75rem;
+            max-width: 100%;
+            grid-column-gap: 0;
+            grid-row-gap: 0.3125rem;
+            background-color: #000000;
+        }
+        .logo1 {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+        .navBar2 {
+            grid-area: 2 / 1 / 3 / 3;
+        }
+        .carouselPromo3 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+        .carouselProd-App8 {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+        .cardImgIoT5 {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+        .cardImgApp4 {
+            grid-area: 4 / 2 / 5 / 3;
+        }
+        .comboUser7 {
+            grid-area: 5 / 1 / 6 / 2;
+        }
+        .promotions6 {
+            grid-area: 5 / 2 / 6 / 3;
+        }
+        .footer9 {
+            grid-area: 6 / 1 / 7 / 3;
+        }
     }
-    .carouselPromo3 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        justify-self: center;
-        align-self: center;
-        grid-area: 2 / 1 / 3 / 4;
-        width: 95%;
-        height: 345px;
-    }
-    .cardImgApp4 {
-        justify-self: center;
-        align-self: center;
-        grid-area: 3 / 1 / 4 / 4;
-        width: 360px;
-        height: 275px;
-    }
-    .cardImgIoT5 {
-        justify-self: center;
-        align-self: center;
-        grid-area: 4 / 1 / 5 / 4;
-        width: 360px;
-        height: 275px;
-    }
-    .promotions6 {
-        justify-self: stretch;
-        align-self: center;
-        grid-area: 5 / 1 / 6 / 2;
-        width: 125px;
-        height: 250px;
-    }
-    .comboUser7 {
-        justify-self: stretch;
-        align-self: center;
-        grid-area: 5 / 2 / 6 / 3;
-        width: 125px;
-        height: 250px;
-    }
-    .promo2 {
-        justify-self: stretch;
-        align-self: center;
-        grid-area: 5 / 3 / 6 / 4;
-        width: 125px;
-        height: 250px;
-    }
-    .carouselProd-App8 {
-        justify-self: center;
-        align-self: center;
-        grid-area: 6 / 1 / 7 / 4;
-        width: 95%;
-        height: 275px;
-    }
-    .footer9 {
-        justify-self: stretch;
-        align-self: stretch;
-        grid-area: 7 / 1 / 8 / 4;
-        width: 375px;
-        height: 245px;
-    }
-}
+    
+    @media(min-width:992px) {}

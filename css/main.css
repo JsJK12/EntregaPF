@@ -14,6 +14,96 @@
 /*logos*/
 /*medidas*/
 /* transiciones */
+/* Index */
+/* Contacto */
+/* Soporte */
+/* nosotros */
+/* productos */
+@media (max-width: 575px) {
+  .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 7.8125rem);
+    grid-template-rows: 2.75rem 21.875rem repeat(4, 18.75rem) 15.625rem;
+    max-width: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    background-color: #000000;
+    margin: 0.125rem; }
+  #navBar2 {
+    justify-self: start;
+    align-self: center;
+    grid-area: 1 / 1 / 2 / 2;
+    width: 14.75rem;
+    height: 2.625rem; }
+  .logo1 {
+    justify-self: center;
+    align-self: center;
+    grid-area: 1 / 2 / 2 / 4;
+    width: 7rem;
+    height: 2.625rem; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    font-size: 8px; }
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    max-height: 75rem;
+    max-width: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 0.3125rem;
+    background-color: #000000; }
+  .logo1 {
+    grid-area: 1 / 1 / 2 / 2; }
+  .navBar2 {
+    grid-area: 2 / 1 / 3 / 2; }
+  .carouselPromo3 {
+    grid-area: 3 / 1 / 4 / 2; }
+  .carouselProd-App8 {
+    grid-area: 4 / 1 / 5 / 2; }
+  .cardImgIoT5 {
+    grid-area: 5 / 1 / 6 / 2; }
+  .cardImgApp4 {
+    grid-area: 6 / 1 / 7 / 2; }
+  .comboUser7 {
+    grid-area: 7 / 1 / 8 / 2; }
+  .promotions6 {
+    grid-area: 8 / 1 / 9 / 2; }
+  .footer9 {
+    grid-area: 9 / 1 / 10 / 2; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 8px; }
+  .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    max-height: 75rem;
+    max-width: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 0.3125rem;
+    background-color: #000000; }
+  .logo1 {
+    grid-area: 1 / 1 / 2 / 3; }
+  .navBar2 {
+    grid-area: 2 / 1 / 3 / 3; }
+  .carouselPromo3 {
+    grid-area: 3 / 1 / 4 / 2; }
+  .carouselProd-App8 {
+    grid-area: 3 / 2 / 4 / 3; }
+  .cardImgIoT5 {
+    grid-area: 4 / 1 / 5 / 2; }
+  .cardImgApp4 {
+    grid-area: 4 / 2 / 5 / 3; }
+  .comboUser7 {
+    grid-area: 5 / 1 / 6 / 2; }
+  .promotions6 {
+    grid-area: 5 / 2 / 6 / 3; }
+  .footer9 {
+    grid-area: 6 / 1 / 7 / 3; } }
+
 /* estilo */
 .containerGrid {
   display: grid;
@@ -38,16 +128,15 @@
   font-size: 25px;
   color: #ffffff;
   background-color: #000000;
-  justify-items: stretch;
-  margin: 0.125rem !important; }
+  justify-items: stretch; }
 
 /*Navegador*/
 #navBar2 {
   grid-area: 1 / 2 / 2 / 13;
-  width: 100%;
+  width: 80%;
   background-color: #000000;
   align-self: stretch;
-  margin-left: 0.125rem;
+  margin-left: 0.0625rem;
   margin-top: 0.95rem;
   margin-right: 0.125rem;
   border: 0;
@@ -152,7 +241,12 @@
   font-family: "poppins" "sans-serif";
   font-size: 18px;
   font-style: oblique;
-  text-align: center; }
+  text-align: center;
+  width: 30rem;
+  height: 100%;
+  align-self: baseline;
+  justify-self: flex-start;
+  margin: 2rem; }
 
 /*Combos*/
 .comboUser7 {
@@ -161,7 +255,12 @@
   font-family: "poppins" "sans-serif";
   font-size: 18px;
   font-style: oblique;
-  text-align: center; }
+  text-align: center;
+  width: 30rem;
+  height: 100%;
+  align-self: baseline;
+  justify-self: flex-end;
+  margin: 2rem; }
 
 .linkPromos {
   outline: none;
@@ -217,7 +316,7 @@
 .flex-containerFooter {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
   align-content: stretch;
